@@ -139,7 +139,9 @@
               if(this.valueAllCheck){
                   this.checkedValue = [...this.value];
               }
-              this.value.sort(this.compareUp(this.value,"key"));
+              if(this.value.length>0){
+                  this.value.sort(this.compareUp(this.value,"key"));
+              }
               //双向绑定
               this.$emit('input', this.value)
           },
@@ -156,7 +158,9 @@
               if(this.listAllCheck){
                   this.checkedList = [...this.list];
               }
-              this.list.sort(this.compareUp(this.list,"key"));
+              if(this.list.length>0){
+                  this.list.sort(this.compareUp(this.list,"key"));
+              }
               //双向绑定
                 this.$emit('input', this.value)
           },

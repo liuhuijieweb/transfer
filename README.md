@@ -2,6 +2,10 @@
 
 > A Vue.js project
 
+# Demo
+
+[Demo page](https://liuhuijieweb.github.io/transfer/index.html)
+
 ## Build Setup
 
 ``` bash

@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-     <shuttle  :set="shuttleSet"  v-model="shuttleSet.list2.value"></shuttle>
+     <shuttleBox  :set="shuttleSet"  v-model="shuttleSet.list2.value"></shuttleBox>
   </div>
 </template>
 
 <script>
-    import shuttle from './components/shuttleBox'
+    import shuttleBox from './components/shuttleBox'
 export default {
     name: 'app',
     components:{
-        shuttle
+        shuttleBox
     },
     data () {
         return {

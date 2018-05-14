@@ -8,11 +8,20 @@ module.exports = {
   //   publicPath: '/dist/',
   //   filename: 'build.js'
   // },
-    entry: './src/main.js', //run dev
+  //   entry: './src/main.js', //run dev
+  //   output: {
+  //       path: path.resolve(__dirname, './demo'),
+  //       publicPath: '/demo/',
+  //       filename: 'build.js'
+  //   },
+    entry: './src/components/index.js',
     output: {
-        path: path.resolve(__dirname, './demo'),
-        publicPath: '/demo/',
-        filename: 'build.js'
+      path: path.resolve(__dirname, './dist'),
+      publicPath: './dist/',
+      filename: 'transfer.js',
+      library: 'transfer',
+      libraryTarget: 'umd',
+      umdNamedDefine: true
     },
   module: {
     rules: [
